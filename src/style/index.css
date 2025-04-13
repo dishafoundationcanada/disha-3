@@ -8,7 +8,7 @@ html, body {
 	background: #FAFAFA;
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
-	color: #444;
+	color: #333;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -21,10 +21,48 @@ html, body {
 	height: 100%;
 }
 
-
 a {
 	text-decoration: none;
-	color: #333;
+	color: #228B22; /* Forest Green */
+}
+
+a:hover {
+	color: #1c6b1c; /* Darker green for hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #228B22;
+}
+
+button {
+	background-color: #228B22;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: 500;
+}
+
+button:hover {
+	background-color: #1c6b1c;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: #228B22;
+	box-shadow: 0 0 0 2px rgba(34, 139, 34, 0.2);
 }
 
 .loading {
@@ -34,17 +72,17 @@ a {
 	animation-name: placeHolderShimmer;
 	animation-timing-function: linear;
 	background: #f6f7f9;
-	background-image: linear-gradient(to right, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%);
+	background-image: linear-gradient(to right, #f6f7f9 0%, #d6e5d6 20%, #f6f7f9 40%, #f6f7f9 100%);
 	background-repeat: no-repeat;
 	background-size: 800px 104px;
 	position: relative;
 }
 
-@keyframes placeHolderShimmer{
-  0% {
-      background-position: -468px 0;
-  }
-  100% {
-      background-position: 468px 0;
-  }
+@keyframes placeHolderShimmer {
+	0% {
+		background-position: -468px 0;
+	}
+	100% {
+		background-position: 468px 0;
+	}
 }
